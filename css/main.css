@@ -1,0 +1,53 @@
+
+main{
+    margin-top: 200px;
+}
+main img{
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+
+}
+main .intro{
+    padding-bottom: 10rem;
+    transition: 2s;
+    opacity: 0;
+}
+main .section_php img{
+    height: 300px;
+    padding: 0 10px;
+    background-color: #1d1d1d;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 2s;
+    margin-bottom: 10rem;
+}
+
+
+main .section_bootstrap img,
+main .section_javascript img,
+main .section_php img,
+main .section_sql img{
+    width: 350px;
+    margin-right: 50px;
+}
+
+
+@media (max-width:700px){
+    main section{
+        flex-direction:column;
+    }
+    main img{
+        width: 200px;
+        height: 200px;
+    }
+    main .section_bootstrap img,main .section_javascript img,main .section_php img{
+        width: 150px;
+        height: 200px;
+        margin: 0;
+    }
+}
