@@ -3,7 +3,9 @@
 # ***heading1 italic bold***
 # ~~heading1 cross off~~ 
 
-```heading1 highlighted ```
+```javascript
+#lol
+```javascript
 
 # heading1 
 <button><a href="http://www.google.com">google </a></button>
