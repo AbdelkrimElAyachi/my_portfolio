@@ -4,13 +4,8 @@
 # ~~heading1 cross off~~ 
 
 ```javascript
-#lol
-```javascript
+//lol
+const a = 5;
+```
 
-# heading1 
-<button><a href="http://www.google.com">google </a></button>
-
-:smile:
-:dog:
-:angry:
 
