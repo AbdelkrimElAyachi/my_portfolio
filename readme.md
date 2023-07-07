@@ -8,5 +8,5 @@
 
 :smile:
 :dog:
-:sad:
+:crying:
 :angry:
