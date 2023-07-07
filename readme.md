@@ -4,4 +4,4 @@
 # ~~heading1 cross off~~ 
 # <mark>heading1 highlighted</mark> 
 # heading1 
-<button><a href="www.google.com">google </a></button>
+<button><a href="http://www.google.com">google </a></button>
