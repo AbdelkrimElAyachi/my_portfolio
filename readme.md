@@ -7,3 +7,6 @@
 <button><a href="http://www.google.com">google </a></button>
 
 :smile:
+:dog:
+:sad:
+:angry:
