@@ -1,6 +1,6 @@
 
 export default class Cube{
-    constructor(parent,x_position,y_position,word=""){
+    constructor(parent,top,left,word=""){
 
         this.isrotated = false;
         this.parent = parent;
@@ -15,8 +15,8 @@ export default class Cube{
             <div class="side bottom"></div>
             <div class="side top"></div>`;
             
-            this.cube.style.top = `${x_position}px`;
-        this.cube.style.left = `${y_position}px`;
+            this.cube.style.top = `${top}px`;
+        this.cube.style.left = `${left}px`;
         
 
         this.render();
