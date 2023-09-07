@@ -2,148 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <meta name="author" content="abdelkrim el ayachi">
+    <meta name="description" content="a portfolio website made by abdelkrim el ayachi to find work because he is broke">
+
+    <!-- open graph ? meta data protocol by facebook -->
+    <meta name="og:image" content="#"> <!-- needs url-->
+    <meta name="og:title" content="abdelkrim el ayachi portfolio">
+    <meta name="og:description" content="a portfolio website made by abdelkrim el ayachi to show off his skills">
+    <meta name="og:local" content="en_US">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Abdelkrim El Ayachi | Web Developper">
+    <meta name="og:url" content="https://my_portfolio.github.io/">
+    <!-- end of open graph meta data-->
+
+    <!-- twitter meta data protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@Abdelkrim_El_Ay">
+    <meta name="twitter:site" content="@Abdelkrim_El_Ay">
+    <meta name="twitter:title" content="Abdelkrim_El_Ayachi portfolio">
+    <meta name="twitter:description" content="a portfolio website made by abdelkrim el ayachi to show off his skills">
+    <meta name="twitter:image:src" content="#"><!-- needs url -->
+    <!-- end of twitter protocol -->
+
+
+    <!-- favicon icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <!-- end of favicon -->
+    
+
+    <title>Abdelkrim El Ayachi | WEB DEVELOPPER</title>
+    <!-- my css style -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- my js scripts -->
+    <script type="module" src="js/generate_bg.js" defer></script>
 </head>
 <body>
-    <header>
-
-        <div>
-            <h1>ABDELKRIM</h1>
-            <h1><span>DEV</span></h1>        
-        </div>
-        <h3>WEB DEVELOPPER</h3>
-    </header>
-    <div class="nav">
-        <div class="langue" >
-            <i onclick="change_langue()" class="bi bi-globe"></i>
-            <span onclick="change_langue()">En</span>
-        </div>
-        <div class="langues">
-            <i class="bi bi-caret-up-fill"></i>
-            <ul>
-                <li onclick="changeToEnglish()">English</li>
-                <li onclick="changeToFrench()">French</li>
-            </ul>
-        </div>
-        <div class="mode">
-            <i onclick="change_theme()" class="bi bi-brightness-low"></i>
-        </div>
-    </div>
-    <aside>
-        <a href="mailto:elayachi2022karim@gmail.com" title="message moi"><i class="bi bi-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/abdelkrimdevelopper" title="visite my channel"><i class="bi bi-linkedin"></i></i></a>
-        <a href="https://github.com/AbdelkrimElAyachi" title="take a look at my github"><i class="bi bi-github"></i></a>
-        <a href="https://web.facebook.com/profile.php?id=100075679176849" title="this is my facebook"><i class="bi bi-facebook"></i></a>
-    </aside>
-
-
-    
-    
-    
-    
-    
-    <div class="cv">
-        <a href="cv.html">CV<span>abdelkrim</span></a>
-    </div>
-    
-    <div class="tracker"></div>
-    
+    <div id="bg"></div>
     <div class="container">
-        <div class="wrapper">
-            <section class="introduction">
-                <p id="start">Hi, my name is</p>
-                <h1 class="important">ABDELKRIM EL AYACHI</h1>
-                <p id="info">
-                    I am web developement student currently in my first year of OFPPT living in Morocco city Casablanca i'm open to any ides of projects or anything that may give me a experience or improve my skills .
-                </p>
-            </section>
-        </div>
-        <main>
-
-            <div class="intro">
-                <h2 class="important">My skills</h2>
-            </div>
-            <section class="section_html">
-                <div class="cover">
-                    <img draggable="false" src="images/html.png" alt="html image">
-                </div>
-                <div class="content">
-                    <p>
-                        I have a strong foundation in HTML and am skilled in creating and structuring web pages using HTML5. I have experience in creating semantic HTML markup, which is essential for improving website accessibility, search engine optimization, and maintainability.<br><br>
-                        I am proficient in using HTML tags and attributes to create properly formatted headings, paragraphs, lists, tables, forms, and multimedia elements such as images and videos. I understand the importance of writing clean and readable HTML code that is easy to understand and maintain.      
-                    </p>
-                </div>
-            </section>
-            <section class="section_css">
-                <div class="cover">
-                    <img draggable="false" src="images/css.png" alt="css image">
-                </div>
-                <dib class="content">
-                    <p>
-                        I have a strong foundation in CSS and am skilled in creating visually appealing and responsive web designs using CSS3. I have expertise in using CSS to style and layout HTML elements, creating custom CSS classes and IDs, and using responsive design techniques to ensure web pages display correctly on a variety of devices.<br><br>
-                        I am proficient in using CSS to create visually engaging designs, such as using gradients, shadows, and other effects to enhance the visual appeal of a webpage. I am also skilled in creating complex layouts using CSS Grid or Flexbox, which allows me to create dynamic and responsive web designs that adapt to the size of the user's screen.
-                    </p>
-                </dib>
-            </section>
-            <section class="section_bootstrap">
-                <div class="cover">
-                    <img draggable="false" src="images/bootstrap.png" alt="bootstrap image">
-                </div>
-                <dib class="content">
-                    <p>
-                        I have experience in using Bootstrap to create responsive and visually appealing web designs. I have a strong understanding of Bootstrap's grid system and the various components it offers, such as navigation bars, forms, and modals.<br><br>
-                        I am skilled in using Bootstrap's pre-built CSS classes and customizing them as needed to achieve the desired design and functionality. I can also create custom Bootstrap themes using Sass or Less, allowing me to create unique and personalized designs that match the client's brand and style.
-                    </p>
-                </dib>
-            </section>
-            <section class="section_javascript">
-                <div class="cover">
-                    <img draggable="false" src="images/javascript.png" alt="javascript image">
-                </div>
-                <dib class="content">
-                    <p>
-                        I have a strong foundation in JavaScript and am skilled in creating dynamic and interactive web applications using vanilla JavaScript. I am proficient in using JavaScript to manipulate the Document Object Model (DOM) of a webpage, creating event-driven programming, and using AJAX to interact with external<br><br>
-                        I am skilled in using modern JavaScript features such as ES6 syntax, arrow functions, and template literals to write clean, concise, and maintainable code. I am also experienced in using JavaScript libraries such as jQuery, Lodash, or Moment.js to simplify complex tasks and speed up development, if needed.
-                    </p>
-                </dib>
-            </section>
-            <section class="section_php">
-                <div class="cover">
-                    <img draggable="false" src="images/php.svg" alt="php image">
-                </div>
-                <dib class="content">
-                    <p>
-                        I have a strong foundation in PHP and am skilled in creating dynamic and interactive web applications using pure PHP, without relying on any frameworks. I am proficient in using PHP to interact with databases, handle user input, and create dynamic web pages using PHP's templating features.<br><br>
-                        I am skilled in using modern PHP features such as namespaces, closures, and anonymous functions to write clean, concise, and maintainable code. I am also experienced in using PHP libraries such as Swift Mailer or PHPMailer to send emails, or PHPExcel to manipulate Excel files.
-                    </p>
-                </dib>
-            </section>
-            <section class="section_sql">
-                <div class="cover">
-                    <img draggable="false" src="images/sql.jpg" alt="mysql image">
-                </div>
-                <dib class="content">
-                    <p>
-                        I have a strong foundation in MySQL and am skilled in creating and managing relational databases using this technology. MySQL is a widely used database management system that is known for its speed, reliability, and scalability.<br>
-                        I am proficient in using MySQL to design and create database schema, tables, and indexes. I am also experienced in using SQL, the language used to interact with MySQL, to perform various operations such as retrieving data, inserting new data, updating existing data, and deleting data.
-                        In addition to database design and management, I am familiar with using MySQL with popular programming languages such as PHP and Python. I can create database-driven web applications and APIs, handle database connections, and use middleware to enhance the functionality of web applications.
-                    </p>
-                </dib>
-            </section>
-
-        </main>
+        
     </div>
-    
-
-
-    <script  src="js/design.js"></script>
-    <script src="js/language.js"></script>
-    <script src="js/scrollEffect.js"></script>
 </body>
 </html>
