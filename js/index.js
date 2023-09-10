@@ -1,2 +1,7 @@
-import{cubes} from "./generate_bg.js";
+import { changeBG , CraeteLimoniCube } from "./libraries/BackgroundFunctions.js";
 
+
+
+
+
+changeBG();

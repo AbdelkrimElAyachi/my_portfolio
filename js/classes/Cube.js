@@ -21,7 +21,7 @@ export default class Cube{
 
         this.render();
     }
-    rotateToRed(){
+    rotateToLimoni(){
         if(this.isrotated){
             this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
             this.isrotated = false;
@@ -35,7 +35,16 @@ export default class Cube{
             this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
             this.isrotated = false;
         }else{
-            this.cube.style.transform = "rotateX(0deg) rotateY(270deg) rotateZ(0deg)";
+            this.cube.style.transform = "rotateX(0deg) rotateY(-90deg) rotateZ(0deg)";
+            this.isrotated = true;
+        }
+    }
+    rotateToBlue(){
+        if(this.isrotated){
+            this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
+            this.isrotated = false;
+        }else{
+            this.cube.style.transform = "rotateX(0deg) rotateY(90deg) rotateZ(0deg)";
             this.isrotated = true;
         }
     }
@@ -45,6 +54,15 @@ export default class Cube{
             this.isrotated = false;
         }else{
             this.cube.style.transform = "rotateX(180deg) rotateY(0deg) rotateZ(0deg)";
+            this.isrotated = true;
+        }
+    }
+    rotateToRed(){
+        if(this.isrotated){
+            this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
+            this.isrotated = false;
+        }else{
+            this.cube.style.transform = "rotateX(-90deg) rotateY(0deg) rotateZ(0deg)";
             this.isrotated = true;
         }
     }
