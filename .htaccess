@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Exclude requests for images and CSS files from the rewrite rule
+RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|css|js|html|webp)$
+
+# Rewrite all other requests to a specific destination (e.g., index.php)
+RewriteRule ^(.*)$ index.html [L]
