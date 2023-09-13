@@ -49,3 +49,76 @@ export function CraeteLimoniCube(x,y,width=3,height=3){
         }
     }
 }
+
+
+
+export function CraeteBlueCube(x,y,width=3,height=3){
+    const max_x = 19;
+    const max_y  = 10;
+
+    if(width>max_x){
+        alert("you set a width bigger than the screen")
+        width = max_x;
+    }
+    if(height>max_y){
+        alert("you set a height bigger than the screen")
+        height = max_y;
+    }
+
+    
+    for(let i=y;i<(height+y);i++){
+        console.log(i);
+        for(let j=x;j<(width+x);j++){
+            cubes[j+i*max_x].rotateToBlue();
+
+        }
+    }
+}
+
+
+export function CraeteGreenCube(x,y,width=3,height=3){
+    const max_x = 19;
+    const max_y  = 10;
+
+    if(width>max_x){
+        alert("you set a width bigger than the screen")
+        width = max_x;
+    }
+    if(height>max_y){
+        alert("you set a height bigger than the screen")
+        height = max_y;
+    }
+
+    
+    for(let i=y;i<(height+y);i++){
+        console.log(i);
+        for(let j=x;j<(width+x);j++){
+            cubes[j+i*max_x].rotateToGreen();
+
+        }
+    }
+}
+
+
+export function CraeteYellowCube(x,y,width=3,height=3){
+    const max_x = 19;
+    const max_y  = 10;
+
+    if(width>max_x){
+        alert("you set a width bigger than the screen")
+        width = max_x;
+    }
+    if(height>max_y){
+        alert("you set a height bigger than the screen")
+        height = max_y;
+    }
+
+    
+    for(let i=y;i<(height+y);i++){
+        console.log(i);
+        for(let j=x;j<(width+x);j++){
+            cubes[j+i*max_x].rotateToYellow();
+
+        }
+    }
+}
