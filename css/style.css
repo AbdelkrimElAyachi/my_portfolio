@@ -1,5 +1,4 @@
-
-.container{
+#root{
   position: relative;
   z-index: 2; 
 }

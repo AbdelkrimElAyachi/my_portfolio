@@ -16,10 +16,13 @@ export function changeBG(i=0,color="L"){
     else if(color==="Y"){
         cubes[i].rotateToYellow();
     }
+    else if(color==="G"){
+        cubes[i].rotateToGreen();
+    }
     console.log(i,cubes.length);
     if(i<cubes.length-1){
         setTimeout(() => {
-            changeBG(++i);
+            changeBG(++i,color);
         }, 5);
     }
 }
@@ -41,7 +44,7 @@ export function CraeteLimoniCube(x,y,width=3,height=3){
     for(let i=y;i<(height+y);i++){
         console.log(i);
         for(let j=x;j<(width+x);j++){
-            cubes[j+i*max_x].rotateToBlue();
+            cubes[j+i*max_x].rotateToLimoni();
 
         }
     }
