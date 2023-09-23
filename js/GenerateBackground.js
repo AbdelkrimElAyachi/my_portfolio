@@ -7,8 +7,8 @@ let yPosition = 0;
 export const cubes = [];
 
 
-for (let j=0;j<10;j++){
-    for(let i=0;i<19;i++){
+for (let j=0;j<11;j++){
+    for(let i=0;i<20;i++){
         cubes.push(new Cube(bg_element,xPosition,yPosition));
         yPosition += 100;
     }

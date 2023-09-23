@@ -2,7 +2,7 @@
 export default class Cube{
     constructor(parent,top,left,word=""){
 
-        this.isrotated = false;
+
         this.parent = parent;
 
         this.cube = document.createElement("div");
@@ -22,49 +22,20 @@ export default class Cube{
         this.render();
     }
     rotateToLimoni(){
-        if(this.isrotated){
-            this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = false;
-        }else{
-            this.cube.style.transform = "rotateX(90deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = true;
-        }
+        this.cube.style.transform = "rotateX(90deg) rotateY(0deg) rotateZ(0deg)";
+
     }
     rotateToYellow(){
-        if(this.isrotated){
-            this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = false;
-        }else{
-            this.cube.style.transform = "rotateX(0deg) rotateY(-90deg) rotateZ(0deg)";
-            this.isrotated = true;
-        }
+        this.cube.style.transform = "rotateX(0deg) rotateY(-90deg) rotateZ(0deg)";
     }
     rotateToBlue(){
-        if(this.isrotated){
-            this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = false;
-        }else{
-            this.cube.style.transform = "rotateX(0deg) rotateY(90deg) rotateZ(0deg)";
-            this.isrotated = true;
-        }
+        this.cube.style.transform = "rotateX(0deg) rotateY(90deg) rotateZ(0deg)";
     }
     rotateToGreen(){
-        if(this.isrotated){
-            this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = false;
-        }else{
-            this.cube.style.transform = "rotateX(180deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = true;
-        }
+        this.cube.style.transform = "rotateX(180deg) rotateY(0deg) rotateZ(0deg)";
     }
     rotateToRed(){
-        if(this.isrotated){
-            this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = false;
-        }else{
-            this.cube.style.transform = "rotateX(-90deg) rotateY(0deg) rotateZ(0deg)";
-            this.isrotated = true;
-        }
+        this.cube.style.transform = "rotateX(-90deg) rotateY(0deg) rotateZ(0deg)";
     }
     render(){
         this.parent.appendChild(this.cube);
