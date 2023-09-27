@@ -37,6 +37,9 @@ export default class Cube{
     rotateToRed(){
         this.cube.style.transform = "rotateX(-90deg) rotateY(0deg) rotateZ(0deg)";
     }
+    rotateToBlack(){
+        this.cube.style.transform = "rotateX(0deg) rotateY(0deg) rotateZ(0deg)";
+    }
     render(){
         this.parent.appendChild(this.cube);
     }

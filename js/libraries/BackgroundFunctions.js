@@ -19,17 +19,19 @@ export function changeBG(i=0,color="L"){
     else if(color==="G"){
         cubes[i].rotateToGreen();
     }
-    console.log(i,cubes.length);
+    else if(color==="b"){
+        cubes[i].rotateToBlack();
+    }
     if(i<cubes.length-1){
         setTimeout(() => {
             changeBG(++i,color);
-        }, 5);
+        }, 4);
     }
 }
 
 export function CraeteLimoniCube(x,y,width=3,height=3){
-    const max_x = 19;
-    const max_y  = 10;
+    const max_x = 20;
+    const max_y  = 11;
 
     if(width>max_x){
         alert("you set a width bigger than the screen")
@@ -53,8 +55,8 @@ export function CraeteLimoniCube(x,y,width=3,height=3){
 
 
 export function CraeteBlueCube(x,y,width=3,height=3){
-    const max_x = 19;
-    const max_y  = 10;
+    const max_x = 20;
+    const max_y  = 11;
 
     if(width>max_x){
         alert("you set a width bigger than the screen")
@@ -77,8 +79,8 @@ export function CraeteBlueCube(x,y,width=3,height=3){
 
 
 export function CraeteGreenCube(x,y,width=3,height=3){
-    const max_x = 19;
-    const max_y  = 10;
+    const max_x = 20;
+    const max_y  = 11;
 
     if(width>max_x){
         alert("you set a width bigger than the screen")
@@ -101,8 +103,8 @@ export function CraeteGreenCube(x,y,width=3,height=3){
 
 
 export function CraeteYellowCube(x,y,width=3,height=3){
-    const max_x = 19;
-    const max_y  = 10;
+    const max_x = 20;
+    const max_y  = 11;
 
     if(width>max_x){
         alert("you set a width bigger than the screen")
@@ -115,9 +117,32 @@ export function CraeteYellowCube(x,y,width=3,height=3){
 
     
     for(let i=y;i<(height+y);i++){
-        console.log(i);
         for(let j=x;j<(width+x);j++){
-            cubes[j+i*max_x].rotateToYellow();
+            console.log(i,j);
+            cubes[j+(i*max_x)].rotateToYellow();
+
+        }
+    }
+}
+
+export function CraeteBlackCube(x,y,width=3,height=3){
+    const max_x = 20;
+    const max_y  = 11;
+
+    if(width>max_x){
+        alert("you set a width bigger than the screen")
+        width = max_x;
+    }
+    if(height>max_y){
+        alert("you set a height bigger than the screen")
+        height = max_y;
+    }
+
+    
+    for(let i=y;i<(height+y);i++){
+        for(let j=x;j<(width+x);j++){
+            console.log(i,j);
+            cubes[j+(i*max_x)].rotateToBlack();
 
         }
     }
