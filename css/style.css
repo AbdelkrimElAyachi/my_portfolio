@@ -128,6 +128,7 @@ body{
 ul li:hover > .line_left{
   width: 100%;
   height: 2px;
+  background-color: rgb(255, 77, 169);
 }
 
 
@@ -142,6 +143,12 @@ ul li:hover > .line_left{
 }
 .icon:hover{
   color: var(--white);
+}
+
+/* letter different style */
+.different{
+  color: #00ffff;
+  text-shadow:4px 4px 0px  #ff447f  ;
 }
 
 /* scroll animation  */
