@@ -63,31 +63,71 @@
 }  
 
 
+/* ------------------------------------------------------------------------header----------------------------------------------------------*/
+header{
+  padding: 1rem 0.6rem;
+}
 
-/* ------------------------------------------------------------------------pages----------------------------------------------------------*/
-body{
-  font-family: var(--ff);
+#btn_menu{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+
+#btn_menu div{
+  width: 1.8rem;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+#links{
+  opacity: 0;
+  transition: 1s;
+  color: rgb(255, 255, 255);  
+}
+#links li{
+  border-bottom: solid 2px white;
+  padding: 0.6rem 0;
+  transition: 0.6s;
+}
+#links li:hover{
+  padding-left:2rem ;
+  color: #ddd;
+}
+/* for menu animation */
+.appear{
+  opacity: 1!important;
+}
+.blur{
+  filter: blur(10px);
 }
 
 
+/* ------------------------------------------------------------------------pages----------------------------------------------------------*/
+
+
 /* cart description style */
-.start_container{
+.container{
   max-width: 1080px;
   width: 90%;
   margin: 5rem auto;
   opacity: 0;
+  color: white;
+  transition: 1s;
 }
-.cart{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 5rem;
-}
-.cart .title{
+
+.title{
   font-size: var(--fM);
   text-transform: uppercase;
 }
-.cart .work{
+.work{
   font-size: var(--fl);
 }
 .description{
@@ -101,7 +141,6 @@ body{
 .list li{
   padding: 0.6rem 1.2rem;
   margin: 1rem 0;
-  width: 10rem;
   position: relative;
 }
 .link{
@@ -128,7 +167,7 @@ body{
 ul li:hover > .line_left{
   width: 100%;
   height: 2px;
-  background-color: rgb(255, 77, 169);
+  background-color: #00ffff;
 }
 
 
@@ -165,16 +204,5 @@ ul li:hover > .line_left{
     opacity: 1;
   }
 }
-@media (min-width:900px) {
-  .title{
-    font-size: var(--fXM) !important;
-  }
-  .start_container{
-    display: flex;
-    gap: 5rem;
-  }
-  .cart{
-    flex: 1;
-  }
-}
+
 
